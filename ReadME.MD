@@ -26,23 +26,24 @@ This project is a simple webpage designed to manage website details. It includes
 
 3 . **Install http-server**
 
-If you don’t have http-server installed globally, install it using npm:
+ If you don’t have http-server installed globally, install it using npm:
+
 
    ```bash
-   npm install -g http-server
+   npm install -g http-server ;
 
-4. **Start the Server**
+ 4 . **Start the Server**
 
 Run http-server to serve the project files:
 
-```bash
-http-server .
+    ```bash
+    http-server .
 
 By default, http-server serves files from the current directory on port 8080. You can specify a different port if needed:
 
-```bash
-http-server -p 8900
+    ```bash
+    http-server -p 8900
 
-5.**Access the Project**
+5. **Access the Project**
 
 Open your web browser and navigate to http://localhost:8080 (or the port you specified) to view the webpage.

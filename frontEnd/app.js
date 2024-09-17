@@ -55,7 +55,7 @@ document.querySelector('.cPaneldClick').addEventListener('click', (e) => {
 
 
 // Clear button event listener
-document.querySelector('.d-grid button').addEventListener('click', clearFields);
+document.querySelector('.ClearBtn').addEventListener('click', clearFields);
 
 // Exit button event listener
 document.querySelectorAll('.d-grid button')[1].addEventListener('click', () => {
