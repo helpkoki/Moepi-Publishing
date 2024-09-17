@@ -1,5 +1,6 @@
-import { getWebsiteData } from './model.js';
+import { getWebsiteData } from './notInUse/model.js';  // Importing the model
 
+// Function to populate fields
 function populateFields(data) {
     document.getElementById('websiteName').value = data.name;
     document.getElementById('visitSite').value = data.site;
@@ -7,6 +8,7 @@ function populateFields(data) {
     document.getElementById('cpanelUrl').value = data.cPanelUrl;
 }
 
+// Function to clear all fields
 function clearFields() {
     document.getElementById('websiteName').value = '';
     document.getElementById('visitSite').value = '';
@@ -14,18 +16,48 @@ function clearFields() {
     document.getElementById('cpanelUrl').value = '';
 }
 
-document.getElementById('moepiBtn').addEventListener('click', () => {
+// Adding event listeners to buttons
+document.querySelector('.btn-group').addEventListener('click', (e) => {
+    const buttonText = e.target.innerText;
     const websites = getWebsiteData();
-    populateFields(websites.moepi);
+
+    switch(buttonText) {
+        case 'Moepi Publishing':
+            populateFields(websites.moepi);
+            break;
+        case 'Tekete':
+            populateFields(websites.tekete);
+            break;
+        case 'Bathobelacan':
+            alert('No data available for Bathobelacan');
+            break;
+        case 'MTI':
+            alert('No data available for MTI');
+            break;
+        default:
+            break;
+    }
+    console.log("worked");
 });
 
-document.getElementById('teketeBtn').addEventListener('click', () => {
-    const websites = getWebsiteData();
-    populateFields(websites.tekete);
+
+// Move to cPanel event listener
+document.querySelector('.cPaneldClick').addEventListener('click', (e) => {
+    const url = document.getElementById('cpanelUrl').value;  // Get the cPanel URL from the input field
+
+    if (url) {
+        window.location.href = url;  // Redirect to the URL if it exists
+    } else {
+        alert("Please enter a valid cPanel URL.");
+    }
 });
 
-document.getElementById('clearBtn').addEventListener('click', clearFields);
 
-document.getElementById('exitBtn').addEventListener('click', () => {
-    window.close(); // Closes the window
+
+// Clear button event listener
+document.querySelector('.d-grid button').addEventListener('click', clearFields);
+
+// Exit button event listener
+document.querySelectorAll('.d-grid button')[1].addEventListener('click', () => {
+    window.close();  // Close the window
 });

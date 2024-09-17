@@ -76,6 +76,17 @@
         <button class="btn btn-light-purple">Exit</button>
     </div>
 </div>
+<script>
+    document.querySelector('.cPaneldClick').addEventListener('click', (e) => {
+        const url = document.getElementById('cpanelUrl').value;
+
+        if (url) {
+            window.location.href = url;
+        } else {
+            alert("Please enter a valid cPanel URL.");
+        }
+    });
+</script>
 <script src="model1.js"></script>
 <script type="module" src="app1.js"></script>
 
