@@ -18,7 +18,7 @@ This project is a simple webpage designed to manage website details. It includes
    If you have a repository, clone it to your local machine using:
 
    ```bash
-   git clone <repository-url>
+   git clone git@github.com:helpkoki/Moepi-Publishing.git
 2 . **Navigate to the Project Directory**
     
     ```bash
