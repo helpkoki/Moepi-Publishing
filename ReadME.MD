@@ -20,24 +20,27 @@ This project is a simple webpage designed to manage website details. It includes
    ```bash
    git clone <repository-url>
 2 . **Navigate to the Project Directory**
+    
+    ```bash
     cd <project-directory>
 
 3 . **Install http-server**
 
-cd <project-directory>
 If you don’t have http-server installed globally, install it using npm:
 
-npm install -g http-server
+   ```bash
+   npm install -g http-server
 
-4.**Start the Server**
+4. **Start the Server**
 
 Run http-server to serve the project files:
 
-
+```bash
 http-server .
 
 By default, http-server serves files from the current directory on port 8080. You can specify a different port if needed:
 
+```bash
 http-server -p 8900
 
 5.**Access the Project**
