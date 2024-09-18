@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Team 2 Project</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function openCpanel() {
+            // Function to handle the cPanel URL
+            var cpanelUrl = document.getElementById('cpanel-url').value;
+            if (cpanelUrl) {
+                window.open(cpanelUrl, '_blank');
+            } else {
+                alert('Please select a company first.');
+            }
+        }
+
+        function loadCompanyData(companyName) {
+            // AJAX request to get company data
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'controller/fetch_company.php', true); // Adjust the PHP file name as needed
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        var data = JSON.parse(xhr.responseText);
+                        if (data) {
+                            document.getElementById('name').value = data.companyname;
+                            document.getElementById('email').value = data.websitename;
+                            document.getElementById('phone').value = data.username;
+                            document.getElementById('cpanel-url').value = data.url;
+                        }
+                    } else {
+                        console.error('Failed to fetch company data.');
+                    }
+                }
+            };
+            xhr.send('companyname=' + encodeURIComponent(companyName));
+        }
+
+        function clearFields() {
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('phone').value = '';
+            document.getElementById('cpanel-url').value = '';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- First div with labels and textboxes -->
+        <div class="form-container">
+            <label for="name"><b>WEBSITE NAME:</b></label>
+            <input type="text" id="name" readonly><br>
+
+            <label for="email"><b>VISIT SITE:</b></label>
+            <input type="text" id="email" readonly><br>
+
+            <label for="phone"><b>USERNAME:</b></label>
+            <input type="text" id="phone" readonly><br>
+
+            <label for="cpanel-url"><b>CPANEL URL:</b></label>
+            <input type="text" id="cpanel-url" readonly><br>
+            <button id="cpanel-button" onclick="openCpanel()">Click Here</button><br>
+        </div>
+
+        <!-- Second div with two buttons -->
+        <div class="button-container">
+            <button onclick="loadCompanyData('Moepi Publishing')">Moepi Publishing</button>
+            <button onclick="loadCompanyData('Tekete')">Tekete</button>
+        </div>
+
+        <!-- Third div with two buttons and space in between -->
+        <div class="spaced-button-container">
+            <button class="button-clear" onclick="clearFields()">Clear</button>
+            <button class="button-exit" onclick="window.close()">Exit</button>
+        </div>
+    </div>
+</body>
+</html>
