@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* First div background color */
+.form-container {
+    background-color: #e3f2fd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Second div background color */
+.button-container {
+    background-color: #fce4ec;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Third div background color */
+.spaced-button-container {
+    background-color: #e8f5e9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+.form-container {
+    margin-bottom: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+    width: calc(85% - 110px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+    transition: box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.spaced-button-container button {
+    flex-grow: 1;
+    margin: 0 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+
+button:hover {
+    background-color: #45a049;
+}
+
+.spaced-button-container button {
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+/* Remove background color from the container */
+.spaced-button-container {
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    gap: 250px;
+}
+
+/* Styling for the clear button */
+.button-clear {
+    padding: 10px 15px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+}
+
+.button-clear:hover {
+    background-color: #0b79d0;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 1);
+}
+
+/* Styling for the exit button */
+.button-exit {
+    padding: 10px 15px;
+    background-color: #F44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+}
+
+.button-exit:hover {
+    background-color: #d32f2f;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 1);
+}
+
+/* Styling for the button container */
+.button-container {
+    background-color: #fce4ec;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    gap: 30px;
+}
+
+/* Styling for the buttons */
+.button-container button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+}
+
+.button-container button:hover {
+    background-color: #45a049;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 1);
+}

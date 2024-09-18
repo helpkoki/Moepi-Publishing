@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Team 2 Project</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="container">
+    <!-- First div with labels and textboxes -->
+    <div class="form-container">
+        <label for="name"><b>WEBSITE NAME:</b></label>
+        <input type="text" id="name" th:value="${company != null && company.companyName != null ? company.companyName : ''}"><br>
+
+        <label for="site"><b>VISIT SITE:</b></label>
+        <input type="text" id="site" th:value="${company != null && company.websiteName != null ? company.websiteName : ''}"><br>
+
+        <label for="username"><b>USERNAME:</b></label>
+        <input type="text" id="username" th:value="${company != null && company.url != null ? company.url : ''}"><br>
+
+        <form action="#" th:action="@{/redirect}" method="post">
+            <input type="hidden" name="companyurl" th:value="${company != null && company.url != null ? company.url : 'not'}" />
+            <label><b>CPANEL URL:</b></label>
+            <button id="cpanel-button" onclick="openCpanel()">Click Here</button><br>
+        </form>
+    </div>
+
+    <!-- Second div with two buttons -->
+    <div class="button-container">
+        <form action="#" th:action="@{/sendMessage}" method="post">
+            <button type="submit" name="company" value="Moepi Publishing">Moepi Publishing</button>
+        </form>
+        <form action="#" th:action="@{/sendMessage}" method="post">
+            <button type="submit" name="company" value="Tekete">Tekete</button>
+        </form>
+    </div>
+
+    <!-- Third div with two buttons and space in between -->
+    <div class="spaced-button-container">
+        <button class="button-clear" onclick="clearForm()">Clear</button>
+        <button class="button-exit">Exit</button>
+    </div>
+</div>
+
+<script>
+    function openCpanel() {
+        // Add logic for opening the CPanel URL
+    }
+
+    function clearForm() {
+        document.getElementById("name").value = "";      // Clear the WEBSITE NAME field
+        document.getElementById("site").value = "";      // Clear the VISIT SITE field
+        document.getElementById("username").value = "";  // Clear the USERNAME field
+    }
+</script>
+
+</body>
+</html>
