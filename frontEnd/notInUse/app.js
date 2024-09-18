@@ -24,7 +24,9 @@ document.getElementById('teketeBtn').addEventListener('click', () => {
     populateFields(websites.tekete);
 });
 
-document.getElementById('clearBtn').addEventListener('click', clearFields);
+document.querySelector('.ClearBtn').addEventListener('click', () =>{
+    document.querySelectorAll('input').forEach(input => input.value = '')
+});
 
 document.getElementById('exitBtn').addEventListener('click', () => {
     window.close(); // Closes the window
