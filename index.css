@@ -159,5 +159,5 @@ body {
 }
 #cpanel-button:hover, .option-button:hover, #clear-button:hover, #exit-button:hover {
     background-color: [new-color];
+    transition: background-color 0.3s ease;
 }
-transition: background-color 0.3s ease;
