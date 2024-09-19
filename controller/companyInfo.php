@@ -8,8 +8,6 @@ $company_name = isset($_POST['firstName']) ? $_POST['firstName'] : '';
 
 
 
-
-
 // Prepare and execute the query
 $sql = "SELECT * FROM company WHERE companyname = ?";
 $stmt = mysqli_prepare($link, $sql);
