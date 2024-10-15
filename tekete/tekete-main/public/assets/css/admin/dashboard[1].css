@@ -1,0 +1,444 @@
+.logo{
+    width:100px;
+    height:100px;
+    margin-bottom:50px;
+}
+.nav-link a{
+    color:#5543ca;
+}
+
+.h3{
+    color: #5543ca;
+	 background: linear-gradient(to right ,#f4524d 0% ,#5543ca 100%);
+	 -webkit-background-clip: text;
+	 -webkit-text-fill-color: transparent;
+}
+
+.row [class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.bar{
+    
+    margin-bottom:4%;
+}
+
+</style>
+		<style>
+		.container{
+			overflow: hidden;
+			position: relative;
+		}
+		.logo{
+    width:100px;
+    height:100px;
+    margin-bottom:50px;
+}
+.new{
+	color: #5543ca;
+	width: 160px;
+}
+/* Style The Dropdown Button */
+.dropbtn {
+    color:#5543ca;
+   background-color: linear-gradient(to right ,pink 0% ,lightgrey 100%);
+    text-transform: capitalize;
+	font-size:16px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	display: block;
+	padding: 5px 3px;
+	line-height: 50px;
+  width: 160px;
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  
+  display: inline-block;
+	color:#5543ca;
+}
+.dropdown a:hover{
+    text-decoration:none;
+    cursor:pointer;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  color: #5543ca;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+
+  color: #5543ca;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size:13px;
+
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+
+  text-decoration: none;
+  background-color:lightgrey;
+}
+
+
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: none;
+  text-decoration:none;
+}
+.show
+{
+    display:block;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: lightgrey;
+ 	transition: 0.3 ease;
+}
+
+.sidebar_2{
+background: linear-gradient(to right ,pink 0% ,lightgrey 100%);
+	width:250px;
+	height: 100%;
+	top:0;
+	left:0;
+	position: fixed;
+	overflow-y: auto;
+	margin-bottom: 10px;
+	padding: 6px 16px;
+
+}
+
+.admin{
+	width:100%;
+	margin-top:80px;
+
+}
+.th{
+    text-align: left;
+	background: lightgrey;
+	color:#5543ca;
+	padding: 9px 1px;
+	letter-spacing: 0.3px;
+}
+td{
+	padding: 9px 1px;
+}
+
+.clickablerow:hover{
+    background-color: lightgrey;
+    
+}
+tr{
+	border-bottom: 1px solid #dddddd;
+}
+.center {
+    margin-right:auto;
+    margin-left:auto;
+	margin-top: 20px;
+	border-collapse: collapse;
+	font-size: 0.9em;
+	min-width: 500px;
+}
+
+.items{
+
+    position:relative;
+	cursor: pointer;
+	
+	color: white;
+}
+.items :hover{
+    text-decoration:none;
+}
+.center-button{
+	margin-top: 10px 0;
+}
+
+
+.title{
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 3px;
+	font-size: 3em;
+	line-height: 48px;
+	padding-bottom: 20px;
+    color: #5543ca;
+	background: linear-gradient(to right ,#f4524d 0% ,#5543ca 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight:normal;
+	margin-left:0%;
+}
+a{
+	color:#5543ca;
+	text-transform: capitalize;
+	font-size:16px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	display: block;
+	padding: 5px 3px;
+	line-height: 50px;
+}
+a:hover{
+  text-decoration: none;  
+}
+
+.submenu{
+	position:absolute;
+	margin-left: 10px;
+	display:none;
+	
+}
+.dropdown{
+	position:relative;
+	
+}
+.dropdown ul:hover {
+	display: initial;
+	text-decoration:none;
+	
+}
+.fa-angle-down{
+	position: absolute;
+	right: 0;
+	margin: 30px;
+	color: #5543ca;
+	margin-right:-15px;
+	size: 10px;
+}
+.fa{
+	width: 35px;
+	color: #5543ca;
+}
+
+a:hover{
+	background: lightgrey;
+	transition: 0.3 ease;
+}
+.submit_btn{
+	display: inline-block;
+	background-image: linear-gradient(to right ,#f4524d 0% ,#5543ca 100%);
+	color:#fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 10px;
+	padding: 8px 16px;
+	border: none;
+	width: 120px;
+	cursor: pointer;
+    border-radius: 10px;
+	margin: 120px 0;
+
+}
+.fa1 {
+	color:red;
+
+}
+.fa2{
+	color: orange;
+}
+.fa3{
+	color: green;
+}
+.incident{
+        
+	max-width: 100%;
+	/*margin: 50px auto;*/
+	margin-left:200px;
+	position: relative;
+	box-shadow: 0 10px 30px 0px rgba(0,0,0,0,1);
+	padding: 30px;
+	
+    }
+    
+    
+    .modal-title{
+        color:#5543ca;
+        margin-right:60%;
+        font-size: 1.5em;
+        letter-spacing: 3px;
+    	line-height: 48px;
+    	
+    }
+    
+    .btn-default{
+        display: inline-block;
+    	background-image: linear-gradient(to right ,#f4524d 0% ,#5543ca 100%);
+    	color:#fff;
+    	text-transform: uppercase;
+    	letter-spacing: 2px;
+    	font-size: 10px;
+    	padding: 8px 16px;
+    	border: none;
+    	width: 120px;
+    	cursor: pointer;
+        border-radius: 10px;
+    }
+    
+    .modal-body{
+        margin:0 auto;
+    }
+    
+    .modal-logo{
+        width:10%;
+        height:10%;
+        /*margin-bottom:10%;*/
+        margin-left:-10%;
+    }
+    
+    th{
+        text-align: left;
+    	color:#5543ca;
+    	padding: 9px 1px;
+    	letter-spacing: 0.3px; 
+    }
+    
+    .modal-table{
+        border:none;
+        border-collapse:collapse;
+    }
+    
+    .tab {
+      overflow: hidden;
+      
+      background-color: #f8f9fc;;
+      width:100%;
+      float:right;
+      margin-bottom:0%;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0px 2px;
+  transition: 0.3s;
+  font-size:14px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #fff;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #fff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+}
+.cursor{
+    
+    cursor:pointer;
+}
+.new :hover{
+    text-decoration:none;
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1.5s;
+  animation: fadeEffect 1.5s;
+}
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.body{
+    margin-left:250px;
+	top:0;
+}
+@media (min-width: 320px) and (max-width: 765px) {
+.sidebar_2{
+    display:none;
+	width:100%;
+	z-index:999999999;
+}
+.body{
+    margin-left:0px;
+}
+.search_top{
+    display:none;
+}
+}
+
+.form-group{
+  border:2px solid;
+  margin-left:5px;
+  border-radius:5px;
+}
+.form-group>label{
+
+  position:relative;
+  top:-20px;
+  left:10px;
+  background-color:#f8f9fc;
+  font-size:13px;
+}
+
+.form-group>select{
+  border:none;
+  top:-20px;
+  outline: 0px;
+  left:0;
+  font-size:12px;
+  background-color:#f8f9fc;
+
+}
+
+.fill{
+	width:92%;
+	margin:0 auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	
+}
+.fill input{
+	float:right;
+	border-radius:5px;
+	border:1px solid #898989;
+	
+}
+.popup{
+	width:200px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	float:right;
+	position:absolute;
+	right:2%;
+	margin-top:8%;
+	z-index:9999;
+	border-radius:5px;
+	background:#fff;
+}
+.cname{
+
+    color: #5543ca;    
+    margin-top:1%;
+    
+}
+

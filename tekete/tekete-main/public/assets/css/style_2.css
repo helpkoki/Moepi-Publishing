@@ -1,0 +1,272 @@
+.logo {
+  width: 100px;
+  height: 100px;
+}
+.admin {
+  width: 100%;
+  margin-top: 80px;
+  position: relative;
+}
+.items a {
+  color: #5543ca;
+  font-family: Arial;
+  text-transform: capitalize;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 3px;
+  line-height: 40px;
+  font-weight: 400px;
+}
+.items a:hover {
+  background: lightgrey;
+  transition: 0.3 ease;
+}
+i {
+  align-items: center;
+}
+
+.sidebar {
+  background: linear-gradient(to right, pink 0%, lightgrey 100%);
+  backdrop-filter: blur(15px);
+  width: 250px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  padding: 6px 16px;
+}
+.new {
+  color: #5543ca;
+  width: 160px;
+  margin-bottom: 20px;
+  font-size: 1vw;
+  font-weight: 400px;
+}
+.fa {
+  width: 35px;
+}
+.incident {
+  max-width: 100%;
+  /*margin: 50px auto;*/
+  position: relative;
+  margin-left: 200px;
+  box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0, 1);
+  padding: 30px;
+}
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 3em;
+  line-height: 48px;
+  padding-bottom: 20px;
+  color: #5543ca;
+  background: linear-gradient(to right, #f4524d 0%, #5543ca 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.label {
+  left: 20px;
+  bottom: 11px;
+  font-size: 16px;
+  color: #5543ca;
+  cursor: text;
+  text-transform: capitalize;
+  transition: transform 0.2s ease-in-out;
+  font-family: Arial;
+  letter-spacing: 1px;
+  font-weight: 400px;
+}
+.incident-form {
+  max-width: 600px;
+  background-color: #ffffff;
+
+  margin: auto;
+}
+
+.input-text {
+  border: 1px solid lightblue;
+  border-radius: 4px;
+  margin: 10px 0;
+  margin-left: 10px 0;
+  height: 28px;
+}
+
+.submit_btn {
+  display: inline-block;
+  background-image: linear-gradient(to right, #f4524d 0%, #5543ca 100%);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 10px;
+  padding: 8px 16px;
+  border: none;
+  width: 180px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 45px 0;
+}
+.clear_btn {
+  display: inline-block;
+  background-image: linear-gradient(to right, #f4524d 0%, #5543ca 100%);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 10px;
+  padding: 8px 16px;
+  border: none;
+  width: 180px;
+  cursor: pointer;
+  border-radius: 10px;
+
+  margin-left: 30px;
+}
+
+select {
+  border: 2px solid lightblue;
+  border-radius: 4px;
+
+  margin-bottom: -50px;
+}
+
+.custom-select {
+  position: relative;
+  font-family: Calibra;
+}
+
+select {
+  background-color: white;
+}
+
+/* Style the arrow inside the select element: */
+select:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+/* Table header */
+thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Table rows */
+tbody tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+/* Table cells */
+th,
+td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display: none;
+  background: #ffff;
+  color: #5543ca;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 12px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "#10004;";
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: #1000;
+}
+
+@media screen and (max-width: 800px) {
+  .sidebar {
+    background: linear-gradient(to right, pink 0%, lightgrey 100%);
+    backdrop-filter: blur(15px);
+    width: 200px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding: 6px 16px;
+  }
+}

@@ -1,0 +1,232 @@
+body {
+  background-image: url("background.png");
+  background-attachment: fixed;
+  background-position: 100%, 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  height: 400%;
+  width: 100%;
+}
+/*navigation*/
+.navigation {
+  width: 90%;
+  height: 80px;
+  margin: 0 auto;
+}
+li {
+  display: inline;
+  float: right;
+}
+li a {
+  display: block;
+  color: White;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+.navigation a:hover {
+  color: black;
+  background-color: rgb(255, 255, 255, 0.4);
+  border-radius: 25px;
+}
+
+.logo-container {
+  left: 10%;
+}
+/*logo*/
+.logo {
+  width: 100%;
+}
+.logo-border {
+  width: 90%;
+  box-shadow:
+    rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 50%;
+  border: 0.1px solid grey;
+}
+
+.heading-container {
+  position: absolute;
+  width: 40%;
+  height: 90%;
+  left: 5%;
+  top: 25%;
+  margin: 0 auto;
+}
+
+/*Slide container*/
+.mySlides-container {
+  top: 22.5%;
+  right: 5%;
+  position: absolute;
+  width: 35%;
+  height: 180px;
+  background: rgb(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow:
+    rgba(0, 0, 0, 0.5),
+    0px,
+    25px,
+    20px,
+    -25px;
+}
+.mySlides-div {
+  background: rgb(255, 255, 255, 0.2);
+  border-radius: 15px;
+}
+.mySlides {
+  display: none;
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 4%;
+}
+.Text2 {
+  margin-top: -2%;
+  font-family: "EB Garamond";
+  color: #000000;
+}
+.bar-graph {
+  width: 50%;
+  align-items: center;
+  background: rgb(255, 255, 255, 0.2);
+  border-radius: 15px;
+}
+.pie-chart {
+  background: rgb(255, 255, 255, 0.2);
+  border-radius: 15px;
+  width: 45%;
+  align-items: center;
+}
+.bar {
+  width: 50%;
+  margin-left: 20%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.pie {
+  margin-left: 10%;
+  margin-top: 15%;
+  margin-bottom: 10%;
+  width: 80%;
+}
+
+.container-header {
+  font-size: 17px;
+  text-align: center;
+  color: #fffafa;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+p {
+  font-size: 17px;
+  font-family: tahoma;
+}
+
+.heading {
+  font-size: 250%;
+  font-family: mallana, sans-serif;
+  background: linear-gradient(to right, #f4524d 0%, #5543ca 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  margin-left: 20px;
+  width: auto;
+  font-size: 70px;
+  font-weight: 200;
+  font-family: Verdana;
+  color: #9999ff;
+  opacity: 0.9;
+}
+
+.prev:hover,
+.next:hover {
+  color: #ccccff;
+}
+
+/* Position the "next button" to the right */
+.next {
+  border-radius: 3px 0 0 3px;
+  float: right;
+  margin-right: 20%;
+}
+
+/*Buttons*/
+.Register_btn {
+  display: inline-block;
+  background-image: linear-gradient(to left, #f4524d 0%, #5543ca 100%);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  /*padding: 8px 16px;*/
+  border: none;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 25px;
+  /*margin: 100px 0;*/
+  margin-left: 2%;
+}
+.login_btn {
+  display: inline-block;
+  background-image: linear-gradient(to right, #f4524d 0%, #5543ca 100%);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  /*padding: 8px 16px;*/
+  border: none;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 25px;
+  /*margin: 100px 0;*/
+}
+
+/*footer*/
+.footer {
+  left: 5%;
+  position: absolute;
+  height: 50px;
+  width: 90%;
+  bottom: 5%;
+}
+
+.line {
+  width: 50%;
+  border-radius: 25px;
+  opacity: 1;
+  margin-top: -15%;
+  height: 3px;
+}
+.line1 {
+  width: 50%;
+  border-radius: 25px;
+  opacity: 0;
+  margin-top: -15%;
+  height: 3px;
+}
+.links {
+  text-decoration: none;
+  border: 10px solid #fff;
+  border-left: 35px solid #fff;
+  border-right: 35px solid #fff;
+  margin-right: 5px;
+  background: #fff;
+  border-radius: 25px;
+  font-family: "Gruppo", sans-serif;
+  font-size: 17px;
+  cursor: pointer;
+  color: #111111;
+}
+.links :hover {
+  color: #cacbcc;
+}
